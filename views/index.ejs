@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title><%= title %></title>
+  <link rel='stylesheet' href='/stylesheets/style.css' />
+</head>
+
+<body>
+  <h1><%= title %></h1>
+  <p>Welcome to <%= title %></p>
+  <% 
+    //for in 을 하면 key 값이 나오고,
+    //for of 을 사용하면 값이 나온다.
+    //nunjucks을 사용한다. ejs 대신...
+    for (i of ['사과', '배', '오렌지']) { 
+    
+  %>
+  <p>welcome <%= i %></p>
+  <% } %>
+</body>
+
+</html>
